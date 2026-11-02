@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11110f">
+    <meta name="description" content="Muito sabor e ingredientes de verdade. Conheça seu novo hambúrguer favorito na Ember & Bun.">
+    <title>Ember &amp; Bun — Hambúrguer de verdade.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Página inicial da Ember & Bun">
+        <span class="brand-mark" aria-hidden="true">E<span>&amp;</span>B</span>
+        <span class="brand-name">EMBER <span>&amp;</span> BUN</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir navegação">
+        <span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="primary-nav" aria-label="Navegação principal">
+        <a href="#menu">Cardápio</a>
+        <a href="#story">Nossa história</a>
+        <a href="#visit">Onde estamos</a>
+      </nav>
+
+      <a class="header-order" href="#menu">Peça agora <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> COMIDA DE VERDADE. SABOR DE VERDADE.</p>
+          <h1>Sabor de<br><span>verdade</span>, sem atalhos.</h1>
+          <p class="hero-description">Hambúrgueres suculentos, feitos na brasa e com ingredientes de verdade. Porque comida rápida também pode ter <em>sabor de comida de verdade.</em></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">Conheça o cardápio <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#story">Nossa essência <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span></div>
+            <p><strong>4,9 / 5</strong><span>nota da galera</span></p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&amp;fit=crop&amp;w=960&amp;q=78" alt="Hambúrguer com queijo derretido, alface e tomate frescos" fetchpriority="high" decoding="async">
+          </div>
+          <div class="image-stamp" aria-label="Feito na hora, nunca congelado">
+            <span>FEITO NA HORA</span>
+            <span class="stamp-star" aria-hidden="true">✳</span>
+            <span>NUNCA CONGELADO</span>
+          </div>
+          <div class="hero-caption"><span class="caption-dot"></span> O CLÁSSICO DA CASA <span>01 / 04</span></div>
+          <span class="hero-scribble" aria-hidden="true">bom demais.</span>
+        </div>
+        <div class="hero-scroll" aria-hidden="true"><span></span> DESÇA E APROVEITE</div>
+      </section>
+
+      <section class="menu-section section-pad" id="menu">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> COISA BOA DE VERDADE</p>
+            <h2>Feito pra<br>melhorar seu dia.</h2>
+          </div>
+          <p class="section-intro">Os clássicos que você ama, preparados com ingredientes que a gente escolhe a dedo. Sem complicação: comida boa de verdade.</p>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="filter-list" role="group" aria-label="Filtrar itens do cardápio">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tudo de bom</button>
+            <button class="filter-button" type="button" data-filter="burgers" aria-pressed="false">Hambúrgueres</button>
+            <button class="filter-button" type="button" data-filter="sides" aria-pressed="false">Acompanhamentos</button>
+            <button class="filter-button" type="button" data-filter="drinks" aria-pressed="false">Bebidas</button>
+          </div>
+          <p class="cart-status" aria-live="polite"><span aria-hidden="true">◉</span> Sua sacola <strong id="cart-count">0</strong></p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="burgers">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=640&amp;q=72" alt="Hambúrguer Duplo da Casa" loading="lazy" decoding="async">
+              <span class="card-tag">O QUERIDINHO DA CASA</span>
+            </div>
+            <div class="card-info">
+              <div><h3>Duplo da Casa</h3><p>Dois smash burgers, queijo derretido e molho da casa.</p></div>
+              <div class="card-buy"><strong>R$ 32</strong><button class="add-button" type="button" aria-label="Adicionar Duplo da Casa à sacola">+</button></div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="burgers">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&amp;fit=crop&amp;w=640&amp;q=72" alt="Hambúrguer crocante de frango com alface" loading="lazy" decoding="async">
+              <span class="card-tag card-tag-light">UM TOQUE PICANTE</span>
+            </div>
+            <div class="card-info">
+              <div><h3>Frango Mel Picante</h3><p>Frango crocante, mel picante, salada fresca e pão macio.</p></div>
+              <div class="card-buy"><strong>R$ 29</strong><button class="add-button" type="button" aria-label="Adicionar Frango Mel Picante à sacola">+</button></div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="sides">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=640&amp;q=72" alt="Batatas fritas douradas e crocantes" loading="lazy" decoding="async">
+              <span class="card-tag card-tag-light">ACOMPANHAMENTO PERFEITO</span>
+            </div>
+            <div class="card-info">
+              <div><h3>Fritas Douradinhas</h3><p>Cortadas à mão, duplamente fritas e com sal marinho.</p></div>
+              <div class="card-buy"><strong>R$ 14</strong><button class="add-button" type="button" aria-label="Adicionar Fritas Douradinhas à sacola">+</button></div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdab765edfd4?auto=format&amp;fit=crop&amp;w=640&amp;q=72" alt="Bebida gelada refrescante com frutas cítricas" loading="lazy" decoding="async">
+              <span class="card-tag">REFRESCÂNCIA DE VERDADE</span>
+            </div>
+            <div class="card-info">
+              <div><h3>Limonada da Casa</h3><p>Limão espremido na hora, um toque de sol e muito gelo.</p></div>
+              <div class="card-buy"><strong>R$ 10</strong><button class="add-button" type="button" aria-label="Adicionar Limonada da Casa à sacola">+</button></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-footer"><span>COMIDA BOA. SEM ENROLAÇÃO.</span><a href="#visit">Até já <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=900&amp;q=78" alt="Hambúrguer feito na hora, pronto para saborear" loading="lazy" decoding="async">
+          <span class="story-image-note">UM POUCO MAIS DE CUIDADO<br>EM CADA MORDIDA.</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> RAPIDEZ COM MAIS QUALIDADE</p>
+          <h2>Comida rápida.<br><span>Cuidado de</span><br>comida caseira.</h2>
+          <p>A gente acredita que um hambúrguer incrível começa muito antes da chapa. Ingredientes melhores, gente boa e um cuidado a mais fazem toda a diferença.</p>
+          <a class="text-link" href="#visit">Conheça a gente <span aria-hidden="true">↗</span></a>
+          <div class="story-values"><span>01 / INGREDIENTES DE VERDADE</span><span>02 / FEITO COM CARINHO</span><span>03 / SEMPRE DE BOM HUMOR</span></div>
+        </div>
+      </section>
+
+      <section class="visit-section section-pad" id="visit">
+        <div class="visit-inner">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SUA MESA ESTÁ ESPERANDO</p>
+          <h2>Venha com fome.<br><span>Saia feliz.</span></h2>
+          <p>Comida boa fica ainda melhor na companhia de quem a gente gosta. Chega mais, escolhe seu lugar e deixa o resto com a gente.</p>
+          <a class="button button-dark" href="mailto:ola@emberandbun.example">Encontre a unidade mais próxima <span aria-hidden="true">↗</span></a>
+          <div class="visit-details"><span>ABERTO TODOS OS DIAS</span><span>11H — 22H</span><span>BONS MOMENTOS INCLUSOS</span></div>
+        </div>
+        <div class="visit-decoration" aria-hidden="true">E&amp;B</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">E<span>&amp;</span>B</span>
+        <span class="brand-name">EMBER <span>&amp;</span> BUN</span>
+      </a>
+      <p>Comida boa. Gente boa. É isso.</p>
+      <span class="copyright">© 2025 EMBER &amp; BUN</span>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
