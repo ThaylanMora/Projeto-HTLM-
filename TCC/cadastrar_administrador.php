@@ -1,0 +1,38 @@
+<?php
+// Aqui você realiza a validação e o processamento do formulário de cadastro de administradores
+// Lembre-se de fazer a conexão com o banco de dados e inserir os dados recebidos do formulário
+
+// Exemplo básico de conexão com o banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "bd_academia";
+
+// Crie uma conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verifique a conexão
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Prepare e execute a consulta SQL para inserir o novo administrador
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$senha = $_POST['senha'];
+
+$is_admin = 1;
+
+$sql = "INSERT INTO usuario (nome, email, telefone, senha, perfil_idperfil )
+        VALUES ('$nome', '$email', '$telefone', '$senha', 1)";
+
+
+if ($conn->query($sql) === TRUE) {
+    echo "<script>alert('Novo administrador cadastrado com sucesso!'); window.location.href = 'login.html';</script>"; 
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>

@@ -1,0 +1,39 @@
+body {
+  background-image: url(../Img/kamadoTanjiroFundo1.1.jpg);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+article {
+  padding: 20px;
+  border-radius: 5%;
+  text-align: center;
+  opacity: 0.8;
+}
+article img{
+  border-radius: 5%;
+}
+article:hover {
+  opacity: 1;
+  border: 1px solid #bebebe;
+}
+article h2{
+  color: #fff;
+}
+
+.ajust {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.ajust img{
+  height: 400px;
+  width: 350px;
+}

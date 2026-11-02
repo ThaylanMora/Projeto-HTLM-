@@ -1,0 +1,245 @@
+<?php
+session_start();
+if (!isset($_SESSION['isLoggedIn']) || $_SESSION['isLoggedIn'] !== true) {
+    header("Location: login.html");
+    exit;
+}
+
+
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WolfGym</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><span>WOLF</span>GYM</a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="agendar.php">Marcar Aula</a>
+            <a href="#pricing">Pagamentos</a>
+            <a href="indexc.html">Carrinho</a>
+            <a class="nav-link" href="buscaraula.php" onclick="exibirAulas();">Aulas</a>
+
+        </nav>
+        <div class="d-flex justify-content-between align-items-center">
+                    <h1>Bem-vindo, <?php echo $_SESSION['username']; ?>!</h1>
+                    <a href="logout.php" class="btn btn-danger">Sair</a>
+                </div>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="image">
+                <img src="img/sobre.jpeg" alt="">
+            </div>
+
+            <div class="content">
+                <span>Sobre Nós</span>
+                <h3 class="title">Cada dia é uma chance de se tornar melhor</h3>
+                <p>Escrever Algo Sobre</p>
+
+                <div class="box-container">
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Corpo e Mente</h3>
+                        <p>Treine seu corpo e sua mente será treinada</p>
+                    </div>
+
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Vida Saudável</h3>
+                        <p>Conquiste uma vida saudável</p>
+                    </div>
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Estratégias</h3>
+                        <p>Estratégias para seu treinamento</p>
+                    </div>
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Treino</h3>
+                        <p>Treine seu corpo fortemente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="information">
+                <span>Plano de Preços</span>
+                <h3>plano de preços acessível para você</h3>
+                <p> <i class="fas fa-check"></i> Exercícios de Cardio </p>
+                <p> <i class="fas fa-check"></i> Levantamento de Peso</p>
+                <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+
+            </div>
+
+            <div class="plan basic">
+                <h3>Plano Básico</h3>
+                <div class="price"><span>R$</span>90<span>/mês</span></div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> Treinador </p>
+                    <p> <i class="fas fa-check"></i> Exercícios de Cardio </p>
+                    <p> <i class="fas fa-check"></i> Levantamento de Peso </p>
+                    <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+                    <a href="escolhaPlano.php" class="btn">Quero</a>
+                </div>
+            </div>
+
+            <div class="plan">
+                <h3>Plano Premium</h3>
+                <div class="price"><span>R$</span>110<span>/mês</span></div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> Treinador </p>
+                    <p> <i class="fas fa-check"></i> Exercícios de Cardio </p>
+                    <p> <i class="fas fa-check"></i> Levantamento de Peso </p>
+                    <p> <i class="fas fa-check"></i> Acompanhamento de Resultados </p>
+                    <a href="escolhaPlano.php" class="btn">Quero</a>
+                </div>
+
+            </div>
+        </section>
+        <section id="blogs" class="blogs">
+            <h1 class="heading"> <span>Suplementos</span> </h1>
+            <div class="swiper blogs-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="images/creatina.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">Compre na academia</a> <span>|</span> <a href="#">R$ 100,00</a>
+                            </div>
+                            <h3>Creatina</h3>
+                            <p>A creatina é um nutriente classificado como "amina", ela é fabricada por nosso organismo e também é encontrada em alguns alimentos. 95% da creatina presente em nosso organismo encontra-se nos músculos, isto porque creatina é usada pela célula muscular na formação de energia, responsável pelas contrações. Ou seja, sem creatina não há contração e a suplementação de creatina pode aumentar a força muscular.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="images/whey.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">Compre na academia</a> <span>|</span> <a href="#">R$ 99,00</a>
+                            </div>
+                            <h3>Whey protein</h3>
+                            <p>O Whey Protein, que vem sendo consumido em maior quantidade e frequência a cada dia, é o resultado de uma série de processos industriais que são aplicados ao leite.
+                            O Whey Protein possui um alto valor nutricional e de aminoácidos essenciais, principalmente os de cadeia ramificada. Além disso, sendo extraído do leite, o suplemento também apresenta cálcio naturalmente.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="images/pre_treino.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a>Compre na academia</a> <span>|</span> <a>R$ 103,00</a>
+                            </div>
+                            <h3>Pré Treino</h3>
+                            <p>Em muitos momentos nos dedicamos o máximo, seguimos à risca a dieta, mantemos a constância no treino mas parece que algo nos prende naquele patamar.
+
+                                Neste momento precisamos de algo que promova uma mudança. Uma mudança no nível de energia e disposição para conseguirmos ir além.
+                                
+                                Com os nutrientes do HAZE você cria no seu corpo um ambiente metabólico favorável para suportar aquele treino com mais volume e intensidade.</p>
+                        </div>
+                    </div>
+    </main>
+    <section id="trainers" class="trainers">
+            <h1 class="heading"> <span>Treinadores Especializados</span> </h1>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="images/personal1.jpeg" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Renato Souza</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/Personalmulher1.jpeg" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Marcela Silva</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/personal2.jpeg" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>João Paulo</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/Personalmulher2.jpeg" alt="">
+                    <div class="content">
+                        <span>Personal</span>
+                        <h3>Luiza Botelho</h3>
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Horário de Funcionamento</h3>
+                <p> Segunda : <i> 7:00 - 22:00 </i> </p>
+                <p> Terça : <i> 7:00 - 22:00 </i> </p>
+                <p> Quarta : <i> 7:00 - 22:00 </i> </p>
+                <p> Quinta : <i> 7:00 - 22:00 </i> </p>
+                <p> Sexta : <i> 7:00 - 22:00 </i> </p>
+                <p> Sábado : <i> 7:00am - 10:30 </i> </p>
+                <p> Domingo : <i> Fechado </i> </p>
+            </div>
+            <div class="box">
+                <h3>Nossos Contatos</h3>
+                <p> <i class="fas fa-phone"></i> +11 8222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> sejafit@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Florianópolis, Brazil</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

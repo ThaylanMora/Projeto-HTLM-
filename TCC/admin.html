@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Administrador</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/admin.css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><span>WOLF</span>GYM</a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a class="nav-link" href="buscarUsuarios.php" onclick="exibirListaUsuarios();">Listar Usuários</a>
+            <a class="nav-link" href="cadastro_administrador.php">Cadastrar Administradores</a>
+            <a class="nav-link" href="cadastro.html">Cadastrar Aluno</a>
+        </nav>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="login.html" class="btn-sair">Sair</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="image">
+                <img src="img/admin.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Bem-vindo, </h1>
+                <!-- Aqui você pode adicionar qualquer conteúdo adicional desejado -->
+            </div>
+        </section>
+
+        <div class="col-md-9">
+            <div id="listaUsuarios" class="mt-4">
+                <!-- Aqui será exibida a lista de usuários -->
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function exibirListaUsuarios() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("listaUsuarios").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "buscarUsuarios.php", true);
+            xhr.send();
+        }
+
+        function removerUsuario(id) {
+            if (confirm("Tem certeza que deseja remover este usuário?")) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        exibirListaUsuarios();
+                    }
+                };
+                xhr.open("GET", "removerUsuario.php?id=" + id, true);
+                xhr.send();
+            }
+        }
+    </script>
+</body>
+</html>

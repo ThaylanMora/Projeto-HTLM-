@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../Img/zoroFundo1.1.jpg);
+ }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .formulario {
+    width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .formulario input[type="submit"] {
+    background-color: darkred;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+
+  .formulario input[type="submit"]:hover {
+    background-color: blueviolet;
+  }
+
+  .link {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .link a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+  .link a:hover {
+    text-decoration: underline;
+  }

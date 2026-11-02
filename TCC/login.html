@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles_login.css" />
+  </head>
+  <header class="header">
+    <a href="index.html" class="logo"><span>WOLF</span>GYM</a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="#about">Sobre</a>
+      <a href="#pricing">Preços</a>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form id="loginForm" action="login.php" method="post">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome de usuário"
+          required
+        />
+        <input type="password" name="senha" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <br />
+      <a href="recuperar.html">Esqueci minha senha</a>
+      <a href="index.html">Voltar</a>
+    </div>
+  </body>
+</html>

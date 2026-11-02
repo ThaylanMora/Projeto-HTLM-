@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Fazer login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="formulario">
+        <h1>Fazer login</h1>
+        <form name="login" id="login"
+    action="../control/loginController.php" 
+    method="POST"></form>
+    <form name="login" 
+    action="../control/loginController.php" 
+    method="POST">
+
+          <input type="email" name="email" placeholder="E-mail" />
+          <input type="password" name="senha" placeholder="Senha" />
+          <input type="submit" value="Login" />
+        </form>
+        <div class="link">
+          <a href="loginAdm.html">Entrar como Adm</a>
+        </div>
+        <div class="link">
+          <a href="cadastrarUsuario.php">Cadastrar-se</a>
+        </div>
+        <div class="link">
+          <a href="GeekStation.php">Voltar</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

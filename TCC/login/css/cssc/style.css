@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background: linear-gradient(
+    68.15deg, blueviolet 50.62%, #f856e5 33.61%);
+}
+.header{
+  background: linear-gradient(
+    68.15deg, rgb(85, 82, 88) 49.38%, rgb(77, 73, 80) 50.62%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.menu{
+  display: flex;
+}
+.menu li {
+  margin-left: 10px ;
+}
+.menu a {
+  display: block;
+  padding: 10px;
+  background: tomato;
+  
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex > div{
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 350px;
+    height: 320px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .flex-container > div > h1 {
+    color: #161616;
+    font-family: sans-serif;
+    font-size: 24px;  
+    margin-top: 8px; 
+  }
+
+  .flex-container > div > p {
+    color: #3d3d3d;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e90102;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a.active {
+    color: #000;
+}
+
+.sidepanel a:hover {
+    color: #000;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+  
+
+
+
+
+
+
+
+
+
+

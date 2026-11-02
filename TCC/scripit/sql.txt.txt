@@ -1,0 +1,20 @@
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    perfil_idperfil BOOLEAN NOT NULL DEFAULT 0
+);
+
+CREATE TABLE permissoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) UNIQUE NOT NULL
+);
+
+
+
+
+#####Depois de criar as tabelas, insira as permissões
+INSERT INTO permissoes (nome) VALUES ('Administrador'), ('Usuário');

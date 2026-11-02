@@ -1,0 +1,30 @@
+.list_container {
+  max-width: 80%;
+  margin: 30px auto;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 300;
+  color: #333;
+}
+table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+button{
+    background-color: #333;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
