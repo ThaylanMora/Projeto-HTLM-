@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulte a Política de Privacidade e os Termos de Uso da Cafeteria Imperial.">
+    <link rel="shortcut icon" href="./img/logo1.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Política de Privacidade e Termos de Uso | Cafeteria Imperial</title>
+    <style>
+        .privacy-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0 auto 3rem;
+        }
+
+        .privacy-tabs a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: 1px solid var(--main-color);
+            border-radius: 0.5rem;
+            color: #f3eee7;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+
+        .privacy-tabs a[aria-selected="true"],
+        .privacy-tabs a:hover,
+        .privacy-tabs a:focus-visible {
+            background: var(--main-color);
+            color: #161616;
+        }
+
+        .privacy-page h3 {
+            margin: 2rem 0 0.8rem;
+            color: #f3eee7;
+            font-size: 1.8rem;
+        }
+
+        .privacy-page .privacy-updated {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#privacy-content">Pular para o conteúdo</a>
+    <header class="header">
+        <div class="header-inner">
+            <a class="logo" href="index.html" aria-label="Cafeteria Imperial - página inicial">
+                <img src="./img/logoentrada.jpg" alt="Logo da Cafeteria Imperial"
+                    style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+            </a>
+            <nav class="navbar" id="main-navigation" aria-label="Navegação principal" tabindex="-1">
+                <a href="index.html">Voltar ao site</a>
+            </nav>
+            <div class="icons">
+                <details class="accessibility-control">
+                    <summary class="accessibility-toggle" aria-controls="accessibility-panel">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="M4 9h16M12 9v5m0 0-5 7m5-7 5 7"></path>
+                        </svg>
+                        <span>Acessibilidade</span>
+                        <span class="accessibility-chevron" aria-hidden="true"></span>
+                    </summary>
+                    <div class="accessibility-panel" id="accessibility-panel">
+                        <p class="accessibility-panel-title">Ajustes de acessibilidade</p>
+                        <p class="accessibility-panel-description">Personalize a leitura e o contraste do site.</p>
+                        <div class="font-controls" role="group" aria-label="Tamanho do texto">
+                            <button type="button" id="font-decrease" aria-label="Diminuir tamanho do texto">A− <span>Menor</span></button>
+                            <span id="font-size-value" aria-live="polite">100%</span>
+                            <button type="button" id="font-increase" aria-label="Aumentar tamanho do texto">A+ <span>Maior</span></button>
+                        </div>
+                        <button type="button" id="contrast-toggle" aria-pressed="false">
+                            Ativar alto contraste
+                        </button>
+                        <button type="button" id="accessibility-reset">Restaurar padrão</button>
+                        <p class="keyboard-help">Atalhos: Alt+1 conteúdo, Alt+2 navegação e Alt+3 rodapé.</p>
+                        <p id="accessibility-status" class="visually-hidden" role="status" aria-live="polite"></p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+
+    <main id="privacy-content" class="privacy-page" tabindex="-1">
+        <section>
+            <h1>Documentos e informações legais</h1>
+            <p class="privacy-updated">Última atualização: 2 de novembro de 2026</p>
+
+            <nav class="privacy-tabs" role="tablist" aria-label="Documentos legais">
+                <a id="privacy-tab" href="#privacy-policy" role="tab" aria-controls="privacy-policy"
+                    aria-selected="true" tabindex="0">Política de Privacidade</a>
+                <a id="terms-tab" href="#terms-of-use" role="tab" aria-controls="terms-of-use"
+                    aria-selected="false" tabindex="-1">Termos de Uso</a>
+            </nav>
+
+            <section id="privacy-policy" role="tabpanel" aria-labelledby="privacy-tab">
+                <h2>Política de Privacidade da Cafeteria Imperial</h2>
+                <p>
+                    A Cafeteria Imperial valoriza a privacidade e trata dados pessoais de acordo com a legislação
+                    aplicável, incluindo a
+                    <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+                        target="_blank" rel="noopener noreferrer">Lei Geral de Proteção de Dados Pessoais (LGPD)</a>.
+                    Esta política explica quais dados são tratados quando você visita
+                    <a href="https://cafeimperial.rf.gd/" target="_blank" rel="noopener noreferrer">nosso site</a>
+                    ou inicia um pedido por meio dele.
+                </p>
+
+                <h3>1. Identificação e contato</h3>
+                <p>
+                    Para fins desta política, a responsável informada pelo serviço é a Cafeteria Imperial,
+                    inscrita no CNPJ 49.388.446/0001-24, com endereço informado na Taguatinga Sul, Q CS,
+                    CSG 9, Lotes 11/12/15/16, Taguatinga, Brasília - DF, CEP 72035-509. Para dúvidas,
+                    solicitações ou exercício de direitos relacionados a dados pessoais, entre em contato
+                    pelo e-mail <a href="mailto:ipcam9914@gmail.com">ipcam9914@gmail.com</a>.
+                </p>
+
+                <h3>2. Dados tratados e finalidades</h3>
+                <ul>
+                    <li>
+                        <strong>Pedido:</strong> o nome informado, itens, quantidades, preferências,
+                        observações e código de retirada são usados para montar a mensagem do pedido e
+                        permitir o atendimento.
+                    </li>
+                    <li>
+                        <strong>Busca e carrinho:</strong> os termos de busca e os itens selecionados são
+                        processados no navegador para exibir resultados e calcular o pedido. O site não
+                        mantém um banco de dados próprio de pedidos.
+                    </li>
+                    <li>
+                        <strong>Acessibilidade:</strong> a preferência de tamanho de texto e alto contraste
+                        pode ser salva no armazenamento local do navegador para ser lembrada em visitas futuras.
+                    </li>
+                    <li>
+                        <strong>Navegação:</strong> dados técnicos de conexão podem ser tratados por serviços
+                        externos quando o navegador carrega mapa, fontes, imagens ou abre links integrados.
+                    </li>
+                </ul>
+
+                <h3>3. Bases e uso dos dados</h3>
+                <p>
+                    Os dados são utilizados para disponibilizar as funcionalidades do site, preparar pedidos
+                    e responder a solicitações. Conforme o caso, o tratamento poderá se apoiar em procedimentos
+                    preliminares relacionados ao pedido, execução do atendimento, cumprimento de obrigação
+                    legal ou regulatória, legítimo interesse ou consentimento, observados os requisitos da LGPD.
+                </p>
+
+                <h3>4. Pedidos pelo WhatsApp</h3>
+                <p>
+                    Ao selecionar a finalização, o site abre o WhatsApp com uma mensagem preenchida com os
+                    dados do pedido. A mensagem não é enviada automaticamente: você pode revisá-la e decidir
+                    se deseja enviá-la. Se optar por continuar, o WhatsApp/Meta tratará os dados conforme
+                    os seus próprios termos e avisos de privacidade. Consulte a
+                    <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank"
+                        rel="noopener noreferrer">Política de Privacidade do WhatsApp</a>.
+                </p>
+
+                <h3>5. Armazenamento e conservação</h3>
+                <p>
+                    O site não armazena pedidos em servidor próprio. Os dados mantidos localmente pelo site
+                    incluem as preferências de acessibilidade salvas no navegador; você pode removê-las
+                    limpando os dados do site no próprio navegador. Depois que uma mensagem é enviada pelo
+                    WhatsApp, a conservação e a exclusão seguem as práticas e configurações da plataforma e
+                    dos dispositivos envolvidos. A cafeteria informa que mantém conversas de atendimento por
+                    até 15 dias, sem que isso controle cópias, backups ou registros de terceiros.
+                </p>
+
+                <h3>6. Cookies, armazenamento local e serviços externos</h3>
+                <p>
+                    O site não utiliza ferramentas próprias de publicidade ou análise de navegação. Ele usa
+                    armazenamento local do navegador para guardar preferências de acessibilidade; isso não é
+                    um cookie. O mapa incorporado e recursos de terceiros, como Google Fonts e imagens de
+                    ícones, podem estabelecer conexões diretas entre seu navegador e seus respectivos
+                    provedores, que podem tratar dados técnicos e aplicar tecnologias próprias. Saiba mais
+                    nas políticas do <a href="https://policies.google.com/privacy" target="_blank"
+                        rel="noopener noreferrer">Google</a> e do
+                    <a href="https://icons8.com/privacy" target="_blank" rel="noopener noreferrer">Icons8</a>.
+                </p>
+
+                <h3>7. Compartilhamento</h3>
+                <p>
+                    Não comercializamos dados pessoais. O compartilhamento pode ocorrer quando necessário
+                    para usar serviços escolhidos por você, como o WhatsApp, para carregar conteúdo externo
+                    do site, atender obrigação legal ou proteger direitos. Os provedores externos atuam
+                    conforme seus próprios termos e políticas.
+                </p>
+
+                <h3>8. Seus direitos</h3>
+                <p>
+                    Nos termos da LGPD, você pode solicitar confirmação da existência de tratamento, acesso,
+                    correção, anonimização, bloqueio ou eliminação de dados, informações sobre compartilhamento,
+                    portabilidade quando aplicável e revogação do consentimento quando essa for a base utilizada.
+                    Para fazer uma solicitação, escreva para
+                    <a href="mailto:ipcam9914@gmail.com">ipcam9914@gmail.com</a>. Também é possível consultar
+                    orientações da
+                    <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener noreferrer">ANPD</a>.
+                    Dados tratados diretamente por terceiros devem ser solicitados a esses provedores.
+                </p>
+
+                <h3>9. Segurança e atualizações</h3>
+                <p>
+                    São adotadas medidas compatíveis com o funcionamento do serviço para reduzir riscos de
+                    acesso indevido e uso inadequado dos dados. Nenhum meio de transmissão ou armazenamento
+                    é totalmente livre de riscos. Esta política pode ser atualizada para refletir mudanças
+                    no site ou na legislação; a versão vigente será publicada nesta página com a data de revisão.
+                </p>
+
+                <p>
+                    Consulte também os <a href="#terms-of-use" data-tab-link="terms-tab">Termos de Uso</a>
+                    ou <a href="index.html">volte ao site da Cafeteria Imperial</a>.
+                </p>
+            </section>
+
+            <section id="terms-of-use" role="tabpanel" aria-labelledby="terms-tab">
+                <h2>Termos de Uso e Serviço da Cafeteria Imperial</h2>
+                <p>
+                    Bem-vindo ao site da Cafeteria Imperial. Estes Termos estabelecem as condições de acesso
+                    e utilização do site <a href="https://cafeimperial.rf.gd/" target="_blank"
+                        rel="noopener noreferrer">https://cafeimperial.rf.gd/</a> e de seus recursos digitais.
+                    Ao navegar ou utilizar o site, você declara que leu e compreendeu estas condições.
+                    Se não concordar com elas, não utilize o site.
+                </p>
+
+                <h3>1. Aceitação e atualização dos Termos</h3>
+                <p>
+                    O uso do site está sujeito a estes Termos e à legislação aplicável. A Cafeteria Imperial
+                    poderá atualizar este documento para refletir mudanças no site ou em suas práticas. A
+                    versão vigente será publicada nesta página, com a data de atualização. O uso após a
+                    publicação de alterações significa que você teve acesso à versão atualizada.
+                </p>
+
+                <h3>2. Uso do site e pedidos</h3>
+                <p>
+                    O site pode ser navegado sem cadastro. No momento, ele não oferece criação de conta nem
+                    processamento de pagamento online. As ferramentas de busca e carrinho ajudam a montar
+                    um pedido; ao finalizar, o site prepara uma mensagem e abre o WhatsApp. O pedido só é
+                    encaminhado se você decidir enviar a mensagem e depende de confirmação pela cafeteria.
+                    Produtos, preços e disponibilidade devem ser confirmados no atendimento.
+                </p>
+                <p>
+                    Você se compromete a fornecer informações corretas ao iniciar um pedido e a utilizar
+                    os canais de atendimento de forma lícita, respeitosa e sem prejudicar o funcionamento
+                    do site ou os direitos de outras pessoas.
+                </p>
+
+                <h3>3. Privacidade</h3>
+                <p>
+                    O tratamento de dados pessoais relacionado ao uso do site é explicado na
+                    <a href="#privacy-policy" data-tab-link="privacy-tab">Política de Privacidade</a>,
+                    que integra estes Termos para fins de consulta. O site não envia automaticamente o
+                    pedido: a decisão de enviar os dados ao WhatsApp é sua.
+                </p>
+
+                <h3>4. Propriedade intelectual</h3>
+                <p>
+                    Textos, identidade visual, fotografias, ilustrações, vídeos, código e demais materiais
+                    disponibilizados no site são protegidos por direitos autorais e outras normas de
+                    propriedade intelectual, pertencendo à Cafeteria Imperial ou a seus respectivos titulares
+                    e licenciantes. O acesso ao site permite seu uso pessoal e não comercial. A reprodução,
+                    distribuição, modificação ou utilização comercial de materiais depende de autorização
+                    prévia do titular, salvo quando permitida pela legislação ou pela licença aplicável.
+                </p>
+
+                <h3>5. Cookies e recursos de terceiros</h3>
+                <p>
+                    O site utiliza armazenamento local do navegador para lembrar preferências de acessibilidade
+                    e incorpora ou direciona a serviços externos, como mapa, fontes, WhatsApp e Instagram.
+                    Esses serviços podem ter termos, tecnologias e políticas próprias. Consulte os detalhes
+                    na <a href="#privacy-policy" data-tab-link="privacy-tab">Política de Privacidade</a> e
+                    nos documentos dos respectivos provedores.
+                </p>
+
+                <h3>6. Links externos e disponibilidade</h3>
+                <p>
+                    Links para serviços de terceiros são disponibilizados para facilitar o acesso. A
+                    Cafeteria Imperial não controla o conteúdo, a disponibilidade ou as práticas desses
+                    serviços. O site é fornecido como canal informativo e pode passar por manutenção,
+                    alterações ou interrupções. Sempre que necessário, confirme informações de produtos
+                    e pedidos diretamente com a cafeteria.
+                </p>
+
+                <h3>7. Responsabilidades</h3>
+                <p>
+                    Você é responsável pelo uso que faz do site e pelas informações que decide enviar.
+                    Nada nestes Termos exclui ou limita direitos ou responsabilidades que não possam ser
+                    afastados conforme a legislação aplicável. A Cafeteria Imperial não responde por
+                    indisponibilidade, conteúdo ou tratamento de dados realizado por plataformas externas,
+                    sem prejuízo das responsabilidades previstas em lei.
+                </p>
+
+                <h3>8. Contato</h3>
+                <p>
+                    Em caso de dúvidas ou comentários sobre estes Termos, entre em contato pelo e-mail
+                    <a href="mailto:ipcam9914@gmail.com">ipcam9914@gmail.com</a>.
+                </p>
+                <p><a href="#privacy-policy" data-tab-link="privacy-tab">Consultar a Política de Privacidade</a></p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer" id="site-footer" tabindex="-1">
+        <p class="footer-credit">© 2026 Estácio</p>
+    </footer>
+    <script src="accessibility.js"></script>
+    <script>
+        (() => {
+            const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+            const panels = tabs.map(tab => document.getElementById(tab.getAttribute("aria-controls")));
+
+            function activateTab(tab, updateHash = false) {
+                tabs.forEach((currentTab, index) => {
+                    const selected = currentTab === tab;
+                    currentTab.setAttribute("aria-selected", String(selected));
+                    currentTab.tabIndex = selected ? 0 : -1;
+                    panels[index].hidden = !selected;
+                });
+
+                if (updateHash) {
+                    history.replaceState(null, "", `#${tab.getAttribute("aria-controls")}`);
+                }
+            }
+
+            function getTabFromHash() {
+                const panelId = window.location.hash.slice(1);
+                return tabs.find(tab => tab.getAttribute("aria-controls") === panelId);
+            }
+
+            tabs.forEach((tab, index) => {
+                tab.addEventListener("click", event => {
+                    event.preventDefault();
+                    activateTab(tab, true);
+                });
+
+                tab.addEventListener("keydown", event => {
+                    let nextIndex;
+                    if (event.key === "ArrowRight") {
+                        nextIndex = (index + 1) % tabs.length;
+                    } else if (event.key === "ArrowLeft") {
+                        nextIndex = (index - 1 + tabs.length) % tabs.length;
+                    } else if (event.key === "Home") {
+                        nextIndex = 0;
+                    } else if (event.key === "End") {
+                        nextIndex = tabs.length - 1;
+                    } else {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    tabs[nextIndex].focus();
+                    activateTab(tabs[nextIndex], true);
+                });
+            });
+
+            document.querySelectorAll("[data-tab-link]").forEach(link => {
+                link.addEventListener("click", () => {
+                    const tab = document.getElementById(link.dataset.tabLink);
+                    if (tab) {
+                        activateTab(tab, true);
+                    }
+                });
+            });
+
+            activateTab(getTabFromHash() || tabs[0]);
+            window.addEventListener("hashchange", () => {
+                const tab = getTabFromHash();
+                if (tab) {
+                    activateTab(tab);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
